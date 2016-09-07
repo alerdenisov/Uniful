@@ -35,11 +35,5 @@ namespace Uniful {
 
 			return asset;
 		}
-
-		[MenuItem("Assets/Create/Settings Data")]
-		public static Settings CreateSettings()
-		{
-			return CreateAsset<Settings>();
-		}
 	}
 }
