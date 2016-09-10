@@ -32,6 +32,31 @@ namespace Uniful
             return (b & field) > 0;
         }
 
+
+		/// <summary>
+		/// Dump to bit string the specified byte.
+		/// </summary>
+		/// <param name="b">The byte value.</param>
+		public static string Dump(this byte b) {
+			return Convert.ToString(b, 2);
+		}
+
+		/// <summary>
+		/// Dump to bit string the specified short integer.
+		/// </summary>
+		/// <param name="s">The short integer value.</param>
+		public static string Dump(this short s) {
+			return Convert.ToString(s, 2);
+		}
+
+		/// <summary>
+		/// Dump to bit string the specified integer.
+		/// </summary>
+		/// <param name="i">The integer value.</param>
+		public static string Dump(this int i) {
+			return Convert.ToString(i, 2);
+		}
+
         /// <summary>
         /// Pops the count.
         /// </summary>
